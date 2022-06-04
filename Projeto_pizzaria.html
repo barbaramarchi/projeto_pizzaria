@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Bárbara Marchi">
+        <meta name="description" content="pizzaria do Afonso">
+        <meta name="keywords" content="html5, tecnologia, css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+        
+<style>
+   body, h1, h2, input, textarea {
+    margin: 0;
+    font-family: arial;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+/* navbar*/
+
+#navbar {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 0 60px;
+    height: 50 px;
+   }
+
+#navbar h2, #navbar ul, #navbar-list li, #navbar nav {
+    display: inline-block;
+}
+
+#navbar h2 {
+    margin: 0;
+    line-height: 60px;
+    margin-left: 80px;
+    font-family: poppins;
+}
+
+#navbar nav {
+    float: right;
+}
+
+#navbar ul {
+    margin-top: 22px;    
+}
+
+#navbar li {
+    margin: 0 10px;
+}
+
+#navbar-list li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);  
+}
+
+/* banner */
+
+#main-banner{
+    background-color: rgb(248, 186, 186);
+    background-image: url(img/logo.jpg);
+    background-size: auto 100%;
+    padding-top: 5vh;
+    padding-bottom: 8vh;
+}
+
+#banner-info h1 {
+    background: white;
+    width: 400px;
+    height: 80px;
+    margin: auto;
+    margin-left: 100px;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: poppins;
+}
+
+#banner-info p {
+    background: white;
+    width: 400px;
+    height: 80px;
+    margin: auto;
+    margin-left: 100px;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* about */
+
+#about-section {
+    text-align: center;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-family: poppins;
+    padding-top: 50px;
+    height: 150px;
+}
+
+#about-section h2 {
+    margin-bottom: 20px;
+    font-family: poppins;
+}
+
+#about-section p {
+    max-width: 550px;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 25px;
+}
+
+/*skills */
+
+
+.skills-container {
+    width: auto;
+    height: auto;
+    background: rgb(230, 33, 33);
+    color: rgb(255, 255, 255);
+    padding-left: 60px;
+    margin: 30px
+
+}
+
+  
+.skills-container img {
+        height: 100px;
+        padding: 2px;
+        margin-bottom: 10px;
+        margin-left: 5px;
+        border: 1px solid black;
+       
+}
+
+/*  flex container */
+
+.skills-container {
+    max-width: 250px;
+    margin: 30px;
+    flex: 1;
+    display: grid;
+   
+    border: 1px solid #ccc;
+    flex-wrap: wrap
+}
+
+
+
+  
+
+
+
+
+
+</style>
+    </head>
+    <body>
+
+        <!--início navbar-->
+
+        <header id="navbar">
+
+            <h2>Fazer o que se ama</h2>
+                     
+            <nav>
+                <ul id="navbar-list">
+                    <li><a href="#">Cardápio</a></li>
+                    <li><a href="#">Clube da Pizza</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+       
+        </header>
+
+        <!--fim navbar-->
+
+        <main>
+            <!--início banner-->
+            <div id="main-banner">
+            <div id="banner-info">
+
+                <h1>Bem-vindos a Pizzaria do Afonso</h1>
+                <p>Prezando sempre pela qualidade sem abrir mão do bom atendimento, nascemos em 2008 para nos tornarmos a sua melhor opção de pizza.
+                Nossa missão é audaciosa, vamos levar a receita do Afonso para todo o Brasil com milhares de pizzarias estando sempre a poucos minutos da sua casa!</p>
+
+            </div>
+            </div>
+            <!--fim banner-->
+
+            <!--início about-->
+
+            <section id="about-section">
+                <h2>O AFONSO ADORA INVENTAR</h2>
+                <p>Nossas pizzas levam o nome de como Afonso gosta de chamá-las. Confira nosso cardápio:</p>
+            </section>
+
+            <!--fim about-->
+
+            <h3>MENU</h3>
+
+        </main>
+
+        <!--início skills-->
+
+        <section id="skills">
+            
+            <div class="container">
+
+                <div class="skills-container">
+                    <img src="img/al_pesto.jpg" alt="al pesto">
+                    <h4>Al peso: Aquela que a maioria não gosta.</h4>
+                    <p>Queijo mussarela, majericão, alho e azeite de oliva.</p>
+                </div>
+
+                <div class="skills-container">
+                    <img src="img/bacom.jpg" alt="bacon">
+                    <h4>Bacon: Os americanos amam.</h4>
+                    <p>Queijo mussarela, bacon e pimentão.</p>
+                </div>
+
+                <div class="skills-container">
+                    <img src="img/berinjela.jpg" alt="berinjela">
+                    <h4>Berinjela: Odiada por alguns, amada por muitos.</h4>
+                    <p>Queijo mussarela, berinjela, tomate pelado e queijo parmesão ralado.</p>
+                </div>
+
+                <div class="skills-container">
+                    <img src="img/brocolis.jpg" alt="brocolis">
+                    <h4>Brócolis: Não combina com pizza.</h4>
+                    <p>Queijo mussarela, brócolis, queijo parmesão ralado.</p>
+                </div>
+
+                <div class="skills-container">
+                    <img src="img/calabresa.jpg" alt="calabresa">
+                    <h4>Calabresa: Não pode faltar.</h4>
+                    <p>Queijo mussarela, calabresa e orégano.</p>
+                </div>
+
+                <div class="skills-container">
+                    <img src="img/fughi.jpg" alt="fughi">
+                    <h4>Fughi: Cogumelo com nome chique.</h4>
+                    <p>Queijo mussarela, fughi ao molho provençal e orégano.</p>
+                </div>
+
+                <div class="skills-container">
+                    <img src="img/tomate_seco.jpg" alt="tomate seco">
+                    <h4>Tomate seco: Aquela que ninguém gosta.</h4>
+                    <p>Queijo mussarela, majericão, alho e azeite de oliva.</p>
+                </div>
+
+                <div class="skills-container">
+                    <img src="img/portuguesa.jpg" alt="portuguesa">
+                    <h4>Portuguesa: apenas no nome</h4>
+                    <p>Queijo mussarela, presunto, ovo, azeitonas pretas, pimentão.</p>
+                </div>
+
+                <div class="skills-container">
+                    <img src="img/taliandesa.jpg" alt="tailandesa">
+                    <h4>Tailandesa: À moda brasileira.</h4>
+                    <p>Queijo mussarela, espinafre, nerinjela, champignon, gorgonzola, alho e óleo, requeijão e molho de tomate.</p>
+                </div>
+         
+            <div class="skills-container">
+                <img src="img/banana.jpg" alt="banana">
+                <h4>Banana: Clássica</h4>
+                <p>Queijo mussarela, banana, gemada e canela.</p>
+            </div>
+
+            <div class="skills-container">
+                <img src="img/morango.jpg" alt="morango">
+                <h4>Morango: É fruta, então pode</h4>
+                <p>Chocolate, morangos, chocolate branco.</p>
+            </div>
+
+            <div class="skills-container">
+                <img src="img/confete.jpg" alt="confete">
+                <h4>Confeti: Agrada a todos</h4>
+                <p>Chocolate ao leite e confeitos coloridos.</p>
+            </div>
+            </div>
+
+        </section>
+
+        <!--fim skills-->
+
+        <footer>
+            <h3>Me mande uma mensagem</h3>
+            <p>Para saber mais sobre os cursos, atendimentos ou dúvidas</p>
+            <img src="img/logo.jpg" alt="pizza">
+        
+        </footer>
+
+        <form action=" method">
+            <input type="text" name="name" placeholder="Seu nome aqui">
+            <input type="email" name="email" placeholder="Seu e-mail">
+            <input type="msg" name="msg" placeholder="Mensagem">
+            <input type="submit" value="Enviar">
+        </form>
+         
+    </body>
+</html>
